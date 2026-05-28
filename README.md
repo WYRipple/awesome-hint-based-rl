@@ -158,12 +158,12 @@ Hint-based Reinforcement Learning (Current Survey Structure)
 | TRAPO | 🌕️ [Trust-Region Adaptive Policy Optimization](https://openreview.net/forum?id=oXlSEcxD6N) | 2025.12 | ICLR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Su-my/TRAPO) |
 | BHA | 🌕️ [Mitigating Distribution Sharpening in Math RLVR via Distribution-Aligned Hint Synthesis and Backward Hint Annealing](https://arxiv.org/abs/2604.07747) | 2026.4 | arXiv preprint |  |
 
-#### §3.1.3 Trajectory Continuation
+#### §3.1.3 Trajectory Replacement
 > Trajectory Replacement modifies the rollout group with trajectory-level samples before the RL update. It changes the candidate set by inserting reliable trajectories or repairing failed ones.
 
 | Abbr. | Paper | Data (1st time) | Publication | Resources |
 |-|-|:-:|:-:|:-:|
-| LUFFY | 🌕️ [Learning to Reason under Off-Policy Guidance](https://openreview.net/forum?id=vO8LLoNWWk) | 2025.9 | NeurIPS 2025 |  |
+| LUFFY | 🌕️ [Learning to Reason under Off-Policy Guidance](https://openreview.net/forum?id=vO8LLoNWWk) | 2025.9 | NeurIPS 2025 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Simplified-Reasoning/LUFFY) |
 | AMPO | 🌕️ [More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration](https://arxiv.org/abs/2510.02227) | 2025.10 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/EnigmaYYYY/AMPO) |
 | ANCHOR | 🌕️ [Toward Honest Language Models for Deductive Reasoning](https://arxiv.org/abs/2511.09222) | 2025.11 | arXiv preprint |  |
 | HiPO | 🌕️ [HiPO: Self-Hint Policy Optimization for RLVR](https://openreview.net/forum?id=rcb20pHmT1) | 2026.2 | ICLR 2026 |  |
@@ -190,8 +190,6 @@ Hint-based Reinforcement Learning (Current Survey Structure)
 > Scaffold Injection places a scaffold in the input prompt as an additional condition for rollout sampling, guiding the policy toward responses that better satisfy the intended target.
 
 
-[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
-
 | Abbr. | Paper | Data (1st time) | Publication | Resources |
 |-|-|:-:|:-:|:-:|
 | Guide-GRPO | 🌕️ [Adaptive Guidance Accelerates Reinforcement Learning of Reasoning Models](https://arxiv.org/abs/2506.13923) | 2025.6 | arXiv preprint |  |
@@ -207,6 +205,45 @@ Hint-based Reinforcement Learning (Current Survey Structure)
 | HDPO | 🌕️ [HDPO: Hybrid Distillation Policy Optimization via Privileged Self-Distillation](https://arxiv.org/abs/2603.23871) | 2026.3 | arXiv preprint |  |
 | PieceHint | 🌕️ [Placing Puzzle Pieces Where They Matter: A Question Augmentation Framework for Reinforcement Learning](https://arxiv.org/abs/2604.15830) | 2026.4 | ACL 2026 |  |
 | KnowRL | 🌕️ [KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance](https://arxiv.org/abs/2604.12627) | 2026.4 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Hasuer/KnowRL) |
+
+
+#### §3.2.2 Scaffold Replacement
+
+> Scaffold Replacement uses scaffolds to generate replacement responses for failed trajectories, offering more flexible and diverse forms of intervention than trajectory replacement.
+
+| Abbr. | Paper | Data (1st time) | Publication | Resources |
+|-|-|:-:|:-:|:-:|
+| HINT | 🌕️ [HINT: Helping Ineffective Rollouts Navigate Towards Effectiveness](https://arxiv.org/abs/2510.09388) | 2025.10 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/ViviqwerAsd/HINT) |
+| LTE | 🌕️ [Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error](https://arxiv.org/abs/2510.26109) | 2025.10 | ACL 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/JamyDon/LTE) |
+| InfoFlow | 🌕️ [InfoFlow: Reinforcing Search Agent Via Reward Density Optimization](https://arxiv.org/abs/2510.26575) | 2025.10 | arXiv preprint |  |
+| Scaf-GRPO | 🌕️ [Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning](https://openreview.net/forum?id=bOwVr0yr7r) | 2025.10 | ICLR 2026 |  |
+| RGR-GRPO | 🌕️ [Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://arxiv.org/abs/2511.12344) | 2025.11 | arXiv preprint |  |
+| KEPO | 🌕️ [KEPO: Knowledge-Enhanced Preference Optimization for Reinforcement Learning with Reasoning](https://arxiv.org/abs/2602.00400) | 2026.1 | arXiv preprint |  |
+| R³L | 🌕️ [R³L: Reflect-then-Retry Reinforcement Learning with Language-Guided Exploration, Pivotal Credit, and Positive Amplification](https://arxiv.org/abs/2601.03715) | 2026.1 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/shiweijiezero/R3L) |
+| ECHO | 🌕️ [No More Stale Feedback: Co-Evolving Critics for Open-World Agent Learning](https://arxiv.org/abs/2601.06794) | 2026.1 | arXiv preprint |  |
+| GOLF | 🌕️ [Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning](https://arxiv.org/abs/2603.04597) | 2026.3 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/LuckyyySTA/GOLF) |
+| HiLL | 🌕️ [Learning to Hint for Reinforcement Learning](https://arxiv.org/abs/2604.00698) | 2026.4 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Andree-9/HiLL) |
+
+#### §3.2.3 Scaffold Optimization
+
+> Scaffold Optimization keeps the policy scaffold-free at inference, converting behavior generated under scaffold conditions into auxiliary training signals for the unguided policy.
+
+[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
+
+
+| Abbr. | Paper | Data (1st time) | Publication | Resources |
+|-|-|:-:|:-:|:-:|
+| ThinkTuning | 🌕️ [ThinkTuning: Instilling Cognitive Reflections without Distillation](https://aclanthology.org/2025.emnlp-main.1592/) | 2025.8 | EMNLP 2025 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/3rdAT/ThinkTuning) |
+| RAVR | 🌕️ [RAVR: Reference-Answer-guided Variational Reasoning for Large Language Models](https://arxiv.org/abs/2510.25206) | 2025.10 | arXiv preprint |  |
+| CoVRL | 🌕️ [Coupled Variational Reinforcement Learning for Language Model General Reasoning](https://arxiv.org/abs/2512.12576) | 2025.11 | ICML 2026 |  |
+| KEPO | 🌕️ [KEPO: Knowledge-Enhanced Preference Optimization for Reinforcement Learning with Reasoning](https://arxiv.org/abs/2602.00400) | 2026.1 | arXiv preprint |  |
+| RLTF | 🌕️ [Expanding the Capabilities of Reinforcement Learning via Text Feedback](https://arxiv.org/abs/2602.02482) | 2026.2 | ICML 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/lili-chen/rltf) |
+| MEL | 🌕️ [Internalizing Meta-Experience into Memory for Guided Reinforcement Learning in Large Language Models](https://arxiv.org/abs/2602.10224) | 2026.2 | arXiv preprint |  |
+| HDPO | 🌕️ [HDPO: Hybrid Distillation Policy Optimization via Privileged Self-Distillation](https://arxiv.org/abs/2603.23871) | 2026.3 | arXiv preprint |  |
+
+
+
+
 
 
 
