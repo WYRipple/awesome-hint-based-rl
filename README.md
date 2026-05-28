@@ -115,3 +115,32 @@ Hint-based Reinforcement Learning (Current Survey Structure)
     ├── §6.2 Cross-level Analysis of Hints
     └── §6.3 Challenges and Future Directionsurce, utilization mechanism, inference-time hint use)
 ```
+
+## §3 Sample-level Hints
+
+> **Sample-level hints** are the foundation of Hint-based RL. Each hint is exclusive to a single training sample and not shared across samples. Hints can originate from offline human annotations, verifiable text, or text selected and processed from the policy or teacher model during training. Their utilization falls into four categories, spanning all stages of the rollout. We further divide hints by content refinement into trajectories and scaffolds, and organize the taxonomy around the basic utilization and construction mechanisms. 
+
+### §3.1 Trajectory-based Hints
+
+> **Trajectory-based hints** take the form of policy-like responses, typically full solution trajectories or their prefixes. They expose concrete reasoning paths that the current policy may fail to sample reliably, making informative states more reachable and giving low-variance samples new rollout variations.
+
+#### §3.1.1 Trajectory Injection
+
+> Trajectory Injection places a trajectory segment in the input context while the policy still generates a full response.
+
+[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
+
+| Abbr. | Paper | Data (1st time) | Publication | Resources |
+|-|-|:-:|:-:|:-:|
+| BREAD | 🌕️ [BREAD: Branched Rollouts from Expert Anchors Bridge SFT & RL for Reasoning](https://openreview.net/forum?id=NUDaln2vCe) | 2025.6 | NeurIPS 2025 |  |
+| QuestA | 🌕️ [QuestA: Expanding Reasoning Capacity in LLMs via Question Augmentation](https://openreview.net/forum?id=3MifB0f7qR) | 2025.7 | ICLR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/foreverlasting1202/QuestA) |
+| CCL | 🌕️ [Progressive Mastery: Customized Curriculum Learning with Guided Prompting for Mathematical Reasoning](https://arxiv.org/abs/2506.04065) | 2025.7 | arXiv preprint |  |
+| GHPO | 🌕️ [GHPO: Adaptive Guidance for Stable and Efficient LLM Reinforcement Learning](https://arxiv.org/abs/2507.10628) | 2025.7 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/hkgc-1/GHPO) |
+| SEELE | 🌕️ [Staying in the Sweet Spot: Responsive Reasoning Evolution via Capability-Adaptive Hint Scaffolding](https://arxiv.org/abs/2509.06923) | 2025.9 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/ChillingDream/seele) |
+| RPO | 🌕️ [RPO: Reinforcement Fine-Tuning with Partial Reasoning Optimization](https://arxiv.org/abs/2601.19404) | 2026.1 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/yhz5613813/RPO) |
+| Failure-Prefix | 🌕️ [Training Reasoning Models on Saturated Problems via Failure-Prefix Conditioning](https://arxiv.org/abs/2601.20829) | 2026.1 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/minwukim/training-on-saturated-problems) |
+| CORE | 🌕️ [CORE: Collaborative Reasoning via Cross Teaching](https://arxiv.org/abs/2601.21600) | 2026.1 | arXiv preprint |  |
+| POPE | 🌕️ [POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration](https://arxiv.org/abs/2601.18779) | 2026.1 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/CMU-AIRe/POPE) |
+| HiPO | 🌕️ [HiPO: Self-Hint Policy Optimization for RLVR](https://openreview.net/forum?id=rcb20pHmT1) | 2026.2 | ICLR 2026 |  |
+| PROS | 🌕️ [PROS: Towards Compute-Efficient RLVR via Rollout Prefix Reuse](https://openreview.net/forum?id=lz1SRTcnUb) | 2026.2 | ICLR 2026 |  |
+
