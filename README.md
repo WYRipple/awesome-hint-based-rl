@@ -142,9 +142,7 @@ Hint-based Reinforcement Learning (Current Survey Structure)
 | HiPO | 🌕️ [HiPO: Self-Hint Policy Optimization for RLVR](https://openreview.net/forum?id=rcb20pHmT1) | 2026.2 | ICLR 2026 |  |
 | PROS | 🌕️ [PROS: Towards Compute-Efficient RLVR via Rollout Prefix Reuse](https://openreview.net/forum?id=lz1SRTcnUb) | 2026.2 | ICLR 2026 |  |
 
-#### §3.1.1 Trajectory Continuation
-
-[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
+#### §3.1.2 Trajectory Continuation
 
 > Trajectory Continuation uses a trajectory prefix as a fixed generation context and trains the policy to complete the suffix. The main design variable is how much prefix to reveal during training.
 
@@ -159,4 +157,32 @@ Hint-based Reinforcement Learning (Current Survey Structure)
 | ADHint | 🌕️ [ADHint: Adaptive Hints with Difficulty Priors for Reinforcement Learning](https://arxiv.org/abs/2512.13095) | 2025.12 | arXiv preprint |  |
 | TRAPO | 🌕️ [Trust-Region Adaptive Policy Optimization](https://openreview.net/forum?id=oXlSEcxD6N) | 2025.12 | ICLR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Su-my/TRAPO) |
 | BHA | 🌕️ [Mitigating Distribution Sharpening in Math RLVR via Distribution-Aligned Hint Synthesis and Backward Hint Annealing](https://arxiv.org/abs/2604.07747) | 2026.4 | arXiv preprint |  |
+
+#### §3.1.3 Trajectory Continuation
+> Trajectory Replacement modifies the rollout group with trajectory-level samples before the RL update. It changes the candidate set by inserting reliable trajectories or repairing failed ones.
+
+| Abbr. | Paper | Data (1st time) | Publication | Resources |
+|-|-|:-:|:-:|:-:|
+| LUFFY | 🌕️ [Learning to Reason under Off-Policy Guidance](https://openreview.net/forum?id=vO8LLoNWWk) | 2025.9 | NeurIPS 2025 |  |
+| AMPO | 🌕️ [More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration](https://arxiv.org/abs/2510.02227) | 2025.10 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/EnigmaYYYY/AMPO) |
+| ANCHOR | 🌕️ [Toward Honest Language Models for Deductive Reasoning](https://arxiv.org/abs/2511.09222) | 2025.11 | arXiv preprint |  |
+| HiPO | 🌕️ [HiPO: Self-Hint Policy Optimization for RLVR](https://openreview.net/forum?id=rcb20pHmT1) | 2026.2 | ICLR 2026 |  |
+| SCOPE | 🌕️ [Recycling Failures: Salvaging Exploration in RLVR via Fine-Grained Off-Policy Guidance](https://arxiv.org/abs/2602.24110) | 2026.2 | arXiv preprint |  |
+| HAPO | 🌕️ [Hindsight-Anchored Policy Optimization: Turning Failure into Feedback in Sparse Reward Settings](https://openreview.net/forum?id=86xIZZ9lnT#discussion) | 2026.3 | ICLR-workshop 2026 |  |
+| S-GRPO | 🌕️ [S-GRPO: Unified Post-Training for Large Vision-Language Models](https://arxiv.org/abs/2604.16557) | 2026.4 | arXiv preprint |  |
+
+#### §3.1.4 Trajectory Optimization
+> Trajectory Optimization converts trajectory hints into auxiliary update signals. 
+
+[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
+
+
+| Abbr. | Paper | Data (1st time) | Publication | Resources |
+|-|-|:-:|:-:|:-:|
+| ExPO | 🌕️ [ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning](https://openreview.net/forum?id=D1PeGJtVEu) | 2025.7 | NeurIPS 2025 |  |
+| MENTOR | 🌕️ [Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs](https://openreview.net/forum?id=axlFycAkoL) | 2025.10 | ICLR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Jiangzs1028/MENTOR) |
+
+
+
+
 
