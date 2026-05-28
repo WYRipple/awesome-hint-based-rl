@@ -174,15 +174,39 @@ Hint-based Reinforcement Learning (Current Survey Structure)
 #### §3.1.4 Trajectory Optimization
 > Trajectory Optimization converts trajectory hints into auxiliary update signals. 
 
-[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
-
-
 | Abbr. | Paper | Data (1st time) | Publication | Resources |
 |-|-|:-:|:-:|:-:|
 | ExPO | 🌕️ [ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning](https://openreview.net/forum?id=D1PeGJtVEu) | 2025.7 | NeurIPS 2025 |  |
 | MENTOR | 🌕️ [Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs](https://openreview.net/forum?id=axlFycAkoL) | 2025.10 | ICLR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Jiangzs1028/MENTOR) |
 
 
+
+### §3.2 Scaffold-based Hints
+
+> **Scaffold-based hints** are high-level textual guidance expressed as abstractions, constraints, or feedback. Compared with trajectory-based hints, they are better suited for steering how the policy approaches a problem while keeping multiple valid reasoning paths open.
+
+#### §3.2.1 Scaffold Injection
+
+> Scaffold Injection places a scaffold in the input prompt as an additional condition for rollout sampling, guiding the policy toward responses that better satisfy the intended target.
+
+
+[![Code](https://img.shields.io/badge/Code-GitHub-blue)]()
+
+| Abbr. | Paper | Data (1st time) | Publication | Resources |
+|-|-|:-:|:-:|:-:|
+| Guide-GRPO | 🌕️ [Adaptive Guidance Accelerates Reinforcement Learning of Reasoning Models](https://arxiv.org/abs/2506.13923) | 2025.6 | arXiv preprint |  |
+| MeRF | 🌕️ [A Simple "Motivation" Can Enhance Reinforcement Finetuning of Large Reasoning Models](https://openreview.net/forum?id=3owSlsYDQf) | 2025.6 | ICLR 2026 |  |
+| AVATAR | 🌕️ [AVATAR: Reinforcement Learning to See, Hear, and Reason Over Video](https://arxiv.org/abs/2508.03100) | 2025.8 | CVPR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/yogkul2000/AVATAR) |
+| RuscaRL | 🌕️ [Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning](https://arxiv.org/abs/2508.16949) | 2025.8 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/IANNXANG/RuscaRL) |
+| NuRL | 🌕️ [Nudging the Boundaries of LLM Reasoning](https://openreview.net/forum?id=hfNnQHkTtv) | 2025.9 | ICLR 2026 | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/SalesforceAIResearch/NuRL) |
+| RAVR | 🌕️ [RAVR: Reference-Answer-guided Variational Reasoning for Large Language Models](https://arxiv.org/abs/2510.25206) | 2025.10 | arXiv preprint |  |
+| RLAD | 🌕️ [RLAD: Training LLMs to Discover Abstractions for Solving Reasoning Problems](https://arxiv.org/abs/2510.02263) | 2025.10 | arXiv preprint |  |
+| CoVRL | 🌕️ [Coupled Variational Reinforcement Learning for Language Model General Reasoning](https://arxiv.org/abs/2512.12576) | 2025.11 | ICML 2026 |  |
+| A2D | 🌕️ [Adaptive Ability Decomposing for Unlocking Large Reasoning Model Effective Reinforcement Learning](https://arxiv.org/abs/2602.00759) | 2026.1 | arXiv preprint |  |
+| SAGE | 🌕️ [Self-Hinting Language Models Enhance Reinforcement Learning](https://arxiv.org/abs/2602.03143) | 2026.2 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/BaohaoLiao/SAGE) |
+| HDPO | 🌕️ [HDPO: Hybrid Distillation Policy Optimization via Privileged Self-Distillation](https://arxiv.org/abs/2603.23871) | 2026.3 | arXiv preprint |  |
+| PieceHint | 🌕️ [Placing Puzzle Pieces Where They Matter: A Question Augmentation Framework for Reinforcement Learning](https://arxiv.org/abs/2604.15830) | 2026.4 | ACL 2026 |  |
+| KnowRL | 🌕️ [KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance](https://arxiv.org/abs/2604.12627) | 2026.4 | arXiv preprint | [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Hasuer/KnowRL) |
 
 
 
